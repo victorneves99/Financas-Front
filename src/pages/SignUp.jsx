@@ -17,7 +17,7 @@ const SignUp = () => {
   return (
     <div>
       <div className="conatiner bg-light text-white">
-        <div className="row h-100 justify-content-center align-items-center">
+        <div className="row min-vh-100 justify-content-center align-items-center">
           <div className="col-6  col-md-4">
             <h1 style={{ color: "#DC143C" }}>CADASTRAR USUARIO</h1>
             <form onSubmit={handleSubmit}>

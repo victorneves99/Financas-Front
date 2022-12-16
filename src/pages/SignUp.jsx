@@ -16,10 +16,12 @@ const SignUp = () => {
   };
   return (
     <div>
-      <div className="conatiner bg-light text-white">
+      <div className="container-fluid bg-light text-white">
         <div className="row min-vh-100 justify-content-center align-items-center">
-          <div className="col-6  col-md-4">
-            <h1 style={{ color: "#DC143C" }}>CADASTRAR USUARIO</h1>
+          <div className="col col-xl-2  col-md-4">
+            <h1 style={{ color: "#DC143C" }} className="text-center">
+              Cadastrar
+            </h1>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="username" className="form-label">
@@ -41,13 +43,9 @@ const SignUp = () => {
                   type="email"
                   className="form-control"
                   id="email"
-                  aria-describedby="emailHelp"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <div id="emailHelp" className="form-text">
-                  We'll never share your email with anyone else.
-                </div>
               </div>
               <div className="mb-3">
                 <label htmlFor="password" className="form-label">

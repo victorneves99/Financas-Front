@@ -17,10 +17,12 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="conatiner bg-light text-white">
-      <div className="row vh-100 justify-content-center align-items-center">
-        <div className="col-6  col-md-4">
-          <h1 style={{ color: "#DC143C" }}>LOGIN SISTEMA</h1>
+    <div className="container-fluid bg-light text-white">
+      <div className="row min-vh-100 justify-content-center align-items-center">
+        <div className="col col-xl-2 col-lg-6  col-md-4">
+          <h1 style={{ color: "#DC143C" }} className="text-center">
+            LOGIN
+          </h1>
           <p>{String(autenticado)}</p>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -31,13 +33,9 @@ const LoginPage = () => {
                 type="text"
                 className="form-control"
                 id="exampleInputEmail1"
-                aria-describedby="emailHelp"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-              <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
-              </div>
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">

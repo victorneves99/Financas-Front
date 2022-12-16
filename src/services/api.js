@@ -69,6 +69,9 @@ export const lancamentoParams = async (lancamentoFiltro) => {
   if (lancamentoFiltro.usuario) {
     params = `${params}&usuario=${lancamentoFiltro.usuario}`;
   }
+  if (lancamentoFiltro.descricao) {
+    params = `${params}&descricao=${lancamentoFiltro.descricao}`;
+  }
 
   return api.get(params);
 };
@@ -77,7 +80,7 @@ export function obterLista() {
   const lista = [
     {
       label: "Selecione",
-      valor: "",
+      value: "",
     },
     {
       label: "Janeiro",
